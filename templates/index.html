@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="color: chartreuse;text-align: left">影评识别系统API!</h1>
+<form method="post">
+    <label>输入你的电影评价:</label><input type="text" name="evaluation"><br>
+    <input type="submit" value="提交"><br>
+    {% for message in get_flashed_messages() %}
+        {{ message }}
+    {% endfor %}
+</form>
+</body>
+</html>
